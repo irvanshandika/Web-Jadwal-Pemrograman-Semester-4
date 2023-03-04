@@ -17,8 +17,9 @@ $id = $_POST['id'];
 $mata_kuliah = $_POST['mata_kuliah'];
 $hari = $_POST['hari'];
 $jam = $_POST['jam'];
+$ruangan = $_POST['ruangan'];
 
-$sql = "UPDATE jadwal_kuliah SET mata_kuliah='$mata_kuliah', hari='$hari', jam='$jam' WHERE id=$id";
+$sql = "UPDATE jadwal_kuliah SET mata_kuliah='$mata_kuliah', hari='$hari', jam='$jam', ruangan='$ruangan' WHERE id=$id";
 
 if (mysqli_query($koneksi, $sql)) {
   echo '<h1 class="text text-center">Data berhasil diedit.</h1>';
